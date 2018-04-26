@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="image/iconfont/iconfont.css">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <style>
+        body, button, select, textarea, input, label, option, fieldset, legend {
+            font-family: 微软雅黑E\8F6F\96C5\9ED1,Tahoma,Verdana;
+            font-size: 12px;
+            line-height: 18px;
+            color: #444;
+        }
+
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size:62.5% ;
+        }
+
+
+        /*@media only screen and (min-width: 320px){*/
+            /*html {*/
+                /*font-size: 187.5% !important;*/
+
+            /*}*/
+        /*}*/
+        /*@media only screen and (min-width: 640px){*/
+            /*html {*/
+                /*font-size: 150% !important;*/
+
+            /*}*/
+        /*}*/
+        /*@media only screen and (min-width: 750px){*/
+            /*html {*/
+                /*font-size: 125% !important;*/
+
+            /*}*/
+        /*}*/
+        /*@media only screen and (min-width: 1242px){*/
+            /*html {*/
+                /*font-size: 62.5% !important;*/
+
+            /*}*/
+        /*}*/
+        textarea {
+            resize: none;
+        }
+        body {
+            background-color: #f6f6f6;
+        }
+        .clear {
+            height: 1px;
+            overflow: hidden;
+            clear: both;
+        }
+        a, img {
+            border: 0;
+        }
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0053a6;
+        }
+        li {
+            list-style-type: none;
+        }
+        .fl {
+            float: left;
+        }
+        .fr {
+            float: right;
+        }
+        .nf {
+            clear: both;
+        }
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        .green {
+            color: #00b500;
+            font-weight: bold;
+        }
+        .ds {
+            display: block;
+        }
+        .hid {
+            overflow: hidden;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+        .clearfix:after {
+            display: block;
+            visibility: hidden;
+            clear: both;
+            height: 0;
+            content: '.';
+            font-size: 0;
+
+
+        }
+
+
+        .fuzhu{
+            width: 100%;
+            height: 5rem;
+            opacity: 0;
+            /*display: none;*/
+        }
+        .myDemo{
+            background-color:white;
+            min-width: 32rem;
+            max-width: 64rem;
+            border:0.1rem solid #eee;
+            margin: 0 auto;
+            position: relative;
+        }
+        html{font-size: 10px}
+        /*@media only screen and (min-width:360px){html{font-size: 1px!important}}*/
+        /*@media only screen and (min-width:375px){html{font-size: 1px!important}}*/
+        /*@media only screen and (min-width:400px){html{font-size: 2px!important}}*/
+        /*@media only screen and (min-width:414px){html{font-size: 3px!important}}*/
+        /*@media only screen and (min-width:480px){html{font-size: 4px!important}}*/
+        /*@media only screen and (min-width:540px){html{font-size: 5px!important}}*/
+        /*@media only screen and (min-width:640px){html{font-size: 6px!important}}*/
+        @media only screen and (min-width:768px){html{font-size:15.5px!important}}
+        @media only screen and (min-width:960px){html{font-size: 15.5px!important}}
+        @media only screen and (min-width:1024px){html{font-size: 10px!important}}
+        /*顶部*/
+        header{
+            width: 64rem;
+            height: 5rem;
+            margin-left: -32rem;
+            position: fixed;
+            z-index: 1111;
+            top: 0;
+            left: 50%;
+            /*min-width: 32rem;*/
+            /*max-width: 64rem;*/
+            /*margin: 0 auto;*/
+            /*position: absolute;*/
+            /*top: 0;*/
+        }
+        .top{
+            height: 5rem;
+            background-image:linear-gradient(to right,#FFC43B,#FF9524);
+            display: flex;
+            flex-direction: row;
+            flex: 10;
+        }
+
+        .top-l {
+            flex: 1;
+            /*background-color: grey;*/
+            position: relative;
+        }
+        .top-l i{
+            top: -0.5rem;
+            position: absolute;
+            left: 50%;
+            font-size: 4.5rem ;color:white;line-height: 5rem;
+            margin-left: -2.25rem;
+        }
+
+        .top-center{
+            flex: 8;
+            line-height: 5rem;
+            text-align: center;
+            position: relative;
+
+        }
+        .top-center input::-webkit-input-placeholder { /* WebKit browsers */
+            color: white;
+        }
+        .top-center input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: white;
+        }
+        .top-center input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: white;
+        }
+        .top-center input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: white;
+        }
+        .top-center input{
+            padding-left: 5rem;
+            box-sizing: border-box;
+            width:100%;
+            height: 4rem;
+            font-size: 1.5rem;
+            color: white;
+            border: none;
+            border-bottom: 0.1rem solid white;
+            outline: none;
+            background-color:rgba(255,196,59,0.1);
+            margin-top: -1rem;
+        }
+        .top-center .i2{
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .top-center .i1{
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .top-r{
+            flex: 1;
+            position: relative;
+
+            /*background-color: grey;*/
+        }
+        .top-r i{
+            top: -0.5rem;
+            position: absolute;
+            left: 50%;
+            font-size: 4.5rem ;
+            color:white;line-height: 5rem;
+            margin-left: -2.25rem;
+        }
+        .top-l p{
+            color: white;
+            position: absolute;
+            bottom: 0.1rem;
+            left: 50%;
+            font-size: 1rem ;
+            margin-left: -1.5rem;
+        }
+        .top-r p{
+            color: white;
+            position: absolute;
+            bottom: 0.1rem;
+            left: 50%;
+            font-size: 1rem ;
+            margin-left: -2.5rem;
+        }
+        /*顶部结束*/
+
+        /*轮布图*/
+        .pic{
+            width: 100%;
+            /*height: 17rem;*/
+            overflow: hidden;
+            position: relative;
+            height: 19rem;
+
+        }
+        .pic ul{
+            width: 600rem;
+            position: absolute;
+            height: 19rem;
+        }
+        .picActive{
+            background-color: rgba(159,159,159,0.7);
+        }
+        .pic li{
+            width: 64rem;
+            height: 17rem;
+            top: 0;
+            left: 0;
+            float: left;
+        }
+        .pic img{
+            width: 100%;
+        }
+        .pic ol{
+
+            position: absolute;
+            right:5%;
+            bottom: 1rem;
+        }
+        .pic ol li{
+            width: 2rem;
+            height: 2rem;
+            /*background-color: #9F9F9F;*/
+            border-radius: 1rem;
+            margin-left: 1rem;
+        }
+        /*轮播图结束*/
+
+        /*分类*/
+        .example{
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            position: relative;
+            height: 22rem;
+        }
+        .example li{
+            float: left;
+            width: 20%;
+            margin-top: 2rem;
+            height: 5rem;
+
+        }
+        .example img{
+            width: 80%;
+            height: 7rem;
+            margin: 0 1rem;
+        }
+        .example-top{
+            flex: 1;
+        }
+        .example-next{
+            flex: 1;
+            position: absolute;
+            top: 10rem;
+            left: 0;
+        }
+        /*分类结束*/
+
+        /*头条*/
+        .hot{
+            width: 100%;
+            border-top:0.1rem solid #eee;
+            padding:1rem 0;
+            /*padding-left: 1rem;*/
+            border-bottom: 1rem solid #eee;
+        }
+        .hot .hot1{
+            width: 12%;
+            padding:0 1.5rem;
+            height: 4rem;
+            border-right: 0.1rem solid #eee;
+        }
+        .hot span{
+            font-size: 2.5rem;
+            font-weight: 400;
+            font-family: 宋体;
+        }
+        /*头条结束*/
+
+        /*商品展示*/
+        section span{
+            display: inline-block;
+            width: 100%;
+            height: 5rem;
+            border-bottom: 0.1rem solid #eee;
+            font: 400 2.5rem/5rem "新宋体";
+            text-align: center;
+            color: #FF5C27;
+        }
+        section .sec1-top{
+            flex: 1;
+            width: 100%;
+            height: 13rem;
+            /*border-right: ;*/
+            border-bottom:0.1rem solid #eee;
+        }
+        section li{
+            width: 25%;
+            height: 100%;
+            border-right: 0.1rem solid #eee;
+            box-sizing: border-box;
+        }
+        section .sec1-next{
+            width: 100%;
+            flex: 1;
+            height: 13rem;
+            /*border-bottom:0.1rem solid #eee;*/
+        }
+        section .sec1-top li{
+            width: 25%;
+            height: 100%;
+            border-right: 0.1rem solid #eee;
+        }
+        section li:last-child{
+            border-right:none;
+        }
+        section ul{
+            width: 100%;
+            height: 100%;
+        }
+        section [class^="sec-"]{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 36rem;
+            border-bottom: 1rem solid #f6f6f6;
+        }
+        section ul li{
+            float: left;
+        }
+        /*商品展示结束*/
+        
+        /*底部*/
+        .foot{
+            position: fixed;
+            z-index: 1111;
+            /*top: 78rem;*/
+            bottom: 0;
+            /*left: 0;*/
+            width: 64rem;
+            left: 50%;
+            margin-left: -32rem;
+            height: 5rem;
+            border-top: 0.1rem solid #eee;
+            background-color:white;
+        }
+        .foot ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex: 5;
+        }
+        .foot ul li{
+            flex: 1;
+            height: 100%;
+            line-height: 5rem;
+            position: relative;
+        }
+
+        .foot i{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -1.5rem;
+            font-size: 3rem;
+            vertical-align: center;
+        }
+        .foot a{
+            width: 100%;
+            height: 5rem;
+            display: inline-block;
+        }
+        .foot a:hover{
+            color: #FF9D3A;
+        }
+        /*底部结束*/
+
+
+    </style>
+    <script src="js/jquery-3.0.0.min.js"></script>
+
+    <script>
+
+       $(window).ready(function () {
+           var tinput=$(".top-center input")
+           tinput.focus(function () {
+                   $(this).removeAttr("placeholder");
+               });
+           tinput.blur(function () {
+                   $(this).attr("placeholder","请输入");
+               });
+
+           var li=$(".pic ul li");
+            // console.log(value);
+           var count=0;
+           var count1=0;
+           var olLi=$(".pic ol li");
+           for(var i=0;i<6;i++){
+               olLi.eq(i).addClass("picActive")
+
+           }
+           var timer=null;
+           timer=setInterval(lunbotu,2000);
+           function lunbotu() {
+               var value = li.eq(2).innerWidth();
+               var ul = $(".pic ul");
+               count++;
+               count1++;
+               if (count1 > 4) {
+                   count1 = 0;
+               }
+               for (var i = 0; i < 5; i++) {
+                   olLi.eq(i).css("background", "rgba(159,159,159,0.7)")
+
+               }
+
+               olLi.eq(count1).css("background", "yellow");
+
+               if (count > 5) {
+                   ul.css({"left": 0});
+                   count = 1;
+               }
+               ul.animate({"left": -(count) * value}, 500);
+               // animate(ul[0],-count*value);
+           }
+
+           //  console.log(window);
+           // console.log(document.body);
+           for(var k=0;k<li.length;k++) {
+               li.eq(k).click(function () {
+                   $(this).mousemove(function () {
+                       var x=window.screenX;
+                       var y=window.screenY;
+                       console.log(x);
+                       console.log(y);
+
+
+                   })
+                    // $(this).animate({"left",})
+               })
+           }
+           function animate(ele,target) {
+               clearInterval(ele.timer);
+               var speed = target > ele.offsetLeft ? 10 : -10;
+               ele.timer = setInterval(function () {
+                   var val = target - ele.offsetLeft;
+                   ele.style.left = ele.offsetLeft + speed + "px";
+                   if (Math.abs(val) < Math.abs(speed)) {
+                       ele.style.left = target + "px";
+                       clearInterval(ele.timer);
+                   }
+               }, 10)
+           }
+
+
+
+
+
+
+       })
+
+    </script>
+</head>
+<body>
+<div class="myDemo">
+    <!--头部-->
+    <header>
+       <div class="top">
+           <div class="top-l">
+               <a href="#"><i class="iconfont" style="">&#xe60e;</i></a>
+               <a href="#"><p>扫一扫</p></a>
+           </div>
+           <div class="top-center">
+               <i class="layui-icon i1">&#xe615;
+               </i>
+               <input type="text" placeholder="请输入">
+               <a href="#"><i class="layui-icon i2">&#xe660;</i></a>
+               </i>
+           </div>
+           <div class="top-r">
+               <a href="#"><i class="iconfont" >&#xe690;</i></a>
+               <a href="#"><p>会员二维码</p></a>
+           </div>
+       </div>
+    </header>
+    <!--头部结束-->
+    <div  class="fuzhu"></div>
+    <!--轮播图-->
+    <div class="pic">
+        <ul>
+            <li>        <img src="image/1.jpg" alt="">
+            </li>
+            <li>        <img src="image/2.jpg" alt="">
+            </li>
+            <li>        <img src="image/3.jpg" alt="">
+            </li>
+            <li>        <img src="image/4.jpg" alt="">
+            </li>
+            <li>        <img src="image/5.jpg" alt="">
+            </li>
+            <li>        <img src="image/1.jpg" alt="">
+            </li>
+        </ul>
+        <ol>
+            <li style="background-color: yellow;"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!--轮播图结束-->
+
+    <!--分类功能-->
+    <div class="example clearfix">
+        <div class="example-top">
+            <ul>
+                <li><a href="#"><img src="image/example/e1.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e2.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e3.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e4.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e5.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="example-next">
+            <ul>
+                <li><a href="#"><img src="image/example/e6.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e7.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e8.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e9.png" alt=""></a></li>
+                <li><a href="#"><img src="image/example/e10.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--分类功能结束-->
+    <div class="hot">
+        <img src="image/hot.png" alt="" class="hot1">
+        <span><img src="" alt="">做你喜欢做的事情</span>
+    </div>
+    
+    <!--商品展示-->
+    <section>
+        <div class="sec-1">
+            <span>有好货</span>
+            <div class="sec1-top">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="sec1-next">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sec-2">
+            <span>超实惠</span>
+            <div class="sec1-top">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="sec1-next">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="sec-3">
+            <span>天猫必逛</span>
+            <div class="sec1-top">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="sec1-next">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sec-4">
+            <span>特色好货</span>
+            <div class="sec1-top">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="sec1-next">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <!--商品展示结束-->
+    
+    <!--底部-->
+    <div class="foot">
+        <ul>
+            <li><a href="#"><i class="iconfont icon-shouye"></i></a></li>
+            <li><a href="#"><i class="iconfont icon-xiaoxi1" ></i></a></li>
+            <li><a href="#"><i class="iconfont icon-wuliu"></i></a></li>
+            <li><a href="#"><i class="iconfont  icon-qicheqianlian- "></i></a></li>
+            <li><a href="#"><i class="iconfont icon-wode"></i></a></li>
+        </ul>
+    </div>
+    <!--底部结束-->
+</div>
+<script>
+    var arr=["a1","a2","a3","a4"];
+    var a=document.querySelectorAll(".head a");
+    for(var i=0;i<a.length;i++){
+        a[i].className=arr[i];
+    }
+    console.log(a);
+</script>
+</body>
+</html>

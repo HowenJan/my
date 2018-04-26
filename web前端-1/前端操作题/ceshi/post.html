@@ -1,0 +1,661 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>-->
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>铺查查 首页</title>
+    <link rel="stylesheet" type="text/css" href="http://bx.ea55.com/source/plugin/ea55_api2/template/aui/css/aui.css?aKs"/>
+<link rel="stylesheet" type="text/css" href="http://bx.ea55.com/source/plugin/ea55_api2/template/puchacha/css/ea55.css?aKs"/>
+<link rel="stylesheet" type="text/css" href="http://bx.ea55.com/source/plugin/ea55_api2/template/puchacha/css/common.css?aKs"/>
+<script src="http://bx.ea55.com/source/plugin/ea55_api2/template/js/jquery-3.1.1.min.js?aKs" type="text/javascript" ></script>
+<link rel="stylesheet" href="http://bx.ea55.com/source/plugin/ea55_api2/template/puchacha/js/swiper/css/swiper.min.css?aKs">
+
+
+<link rel="stylesheet" type="text/css" href="css.css?aKs"/>
+
+<style type="text/css">
+.swiper-slide {
+display: block;
+text-align: left;
+}
+</style>
+
+<script type="text/javascript">
+var ea55_data={'appid':6};
+var ea55_lang={};
+ea55_lang['dw_name']='<i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 ea55_loader1"></i> 定位中...';
+ea55_lang['dw_name_err']='定位失败,点击重试!';
+</script>
+
+</head>
+<body>
+<div class="main">
+<div class="top">
+    <a href="#"><img src="image/1.png" alt=""></a>
+    <span class="aui-font-size-20" >(图片。。。。。。。。)</span>
+</div>
+<div class="section-1 aui-content ">
+    <div class="section-whole-one" style=" padding-top: 2.5rem;height: 30%;">信息来源</div>
+    <div class="section-1-two">
+        <span style="color: black">你打算跟谁获取商铺信息</span>
+        <div class="aui-row">
+            <div class="aui-col-xs-6">
+                <div class="s1-userhead"></div>
+                <div class="s1-user"></div>
+            </div>
+            <div class="aui-col-xs-6">
+                <div class="s1-userhead s1-userhead-col"></div>
+                <div class="s1-user s1-user-col"></div>
+            </div>
+        </div>
+        <div class="aui-row aui-row-2">
+            <div class="aui-col-xs-6">
+                <span>铺主信息: </span><input type="text" placeholder="">
+            </div>
+            <div class="aui-col-xs-6">
+                <span>铺主电话：</span><input type="text" placeholder="请输入">
+            </div>
+    </div>
+</div>
+</div>
+<div class="section-2 aui-content" >
+    <div class="section-whole-one" style="padding-top:1.2rem;height: 6%" >基础信息</div>
+    <div class="section-2-two aui-list">
+        <ul class="aui-list aui-list-in aui-media-list">
+            <li class="section-header" ><span></span>商铺地址</li>
+            <li class="aui-list-item">
+                <div class="aui-list-item-inner" >
+                        <div class="aui-row s2-btn">
+                            <div class="aui-col-xs-3 aui-btn aui-btn-default " style="margin-left: 0">
+                                <span>广东省</span><span class="icon icon aui-pull-right"></span>
+                            </div>
+                            <div class="aui-col-xs-3 aui-btn aui-btn-default " style="margin-left:3.7rem" >
+                                <span>广州市</span><span class="icon aui-pull-right"></span>
+                            </div>
+                            <div class="aui-col-xs-3 aui-btn aui-btn-default " style="margin-left:3.7rem">
+                                <span>白云区</span><span class="icon icon aui-pull-right"></span>
+                            </div>
+                        </div>
+                </div>
+            </li>
+            <li class="s2-adress">
+                    详细地址：广州市白云区。。。。
+                <div style="width: 100%;
+                height: 0.05rem;background-color:#eee;margin-top: 1.5rem;margin-left:-1rem!important;">
+
+                </div>
+            </li>
+            <li class="section-header" ><span></span>商铺朝向</li>            <li class="">
+                <div class="aui-row s2-li3">
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default" style="margin-left: 0">正南</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">正北</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">正东</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">正西</div>
+                </div>
+                <div class="aui-row s2-li3" style="padding-top: 2rem">
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default" style="margin: 0;">东南</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">西南</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">东北</div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default">西北</div>
+                </div>
+                <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+                </div>
+            </li>
+            <li class="section-header" ><span></span>商铺形象</li>
+            <li>
+                <div class="aui-row s2-li4" style="padding-top: 0.8rem;margin-left: 0" >
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">西南</div>
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">东北</div>
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">西北</div>
+                </div>
+                <div class="aui-row s2-li4" style="margin-top: 3rem;margin-left: 0" >
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">西南</div>
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">东北</div>
+                    <div class="aui-col-xs-4 aui-btn aui-btn-default">西北</div>
+                </div>
+                <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 3rem;margin-left: 1.5rem">
+
+                </div>
+            </li>
+            <li class="section-header" style="margin-top: 0.5rem" ><span></span>商铺状态</li>
+            <li>
+                <div class="aui-row s2-btn">
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default " style="margin-left: 0">
+                        <span class="icon aui-pull-left"></span><span>经营中</span>
+                    </div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default " >
+                        <span class="icon aui-pull-left"></span> <span>转租中</span>
+                    </div>
+                    <div class="aui-col-xs-3 aui-btn aui-btn-default " >
+                        <span class="icon aui-pull-left"></span><span>空铺招租中</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="section-3 aui-content">
+    <div class="section-whole-one"  style="padding-top:2rem;height: 20%">商铺租赁</div>
+    <div class="aui-row s3 aui-content aui-margin-b-15">
+        <div class="aui-col-xs-6"><span class="aui-pull-left">月租:</span><input type="text" placeholder=""></div>
+        <div class="aui-col-xs-6"   style="    padding-left: 2rem;"><span class="aui-pull-left">面积:</span><input type="text" placeholder=""></div>
+        <div class="aui-col-xs-6" style="margin-top: -0.8rem;"><span>电费:</span><input type="text" placeholder=""></div>
+        <div class="aui-col-xs-6"  style="   margin-top: -0.8rem;  padding-left: 2rem;"><span>水费:</span><input type="text" placeholder=""></div>
+
+
+    </div>
+    <section style="margin-top: 1.3rem">
+        <div class="aui-gird">
+            <div class="aui-row s3-gird  ">
+                <div class="aui-col-xs-4" style="padding-left: 0;">
+                    <span class="s3-gird-span" style="left: 0;top: 2rem;">月租:</span>
+                    <input class="s3-gird-input" type="text" placeholder="">
+                </div>
+                <div class="aui-col-xs-4" >
+                    <span class="aui-pull-left" style="left: 7rem; top: 1.6rem;">面议</span>
+                    <input type="radio" class="aui-radio" placeholder="" checked="checked" style="top: 0.5rem;left: 3.3rem;">
+                </div>
+                <div class="aui-col-xs-4">
+                    <span class="aui-pull-left" style="left: 7rem; top: 1.6rem;">新铺</span>
+                    <input type="radio" class="aui-radio" placeholder="" style="top: 0.5rem;left: 3.3rem;">
+                </div>
+                <div class="aui-col-xs-3">
+                    <span style="font:500 1.25rem 微软雅黑;top:1.2rem;left: 0;color: grey">租赁时间：</span>
+                </div>
+                <div class="aui-col-xs-2 aui-l-padded-0" >
+                    <span class="aui-pull-left" style="top: 1.5rem;left: 2.5rem">三年</span>
+                    <input type="radio" class="aui-radio" placeholder="" checked="checked" style="top:0.8rem;left: 0">
+                    </div>
+                <div class="aui-col-xs-2 aui-l-padded-10">
+                    <span class="aui-pull-left" style="top: 1.5rem;left: 2.5rem">五年</span>
+                    <input type="radio" class="aui-radio" placeholder=""  style="top: 0.8rem;left: 0">
+                </div>
+                <div class="aui-col-xs-2 aui-l-padded-10">
+                    <span class="aui-pull-left"  style="top: 1.5rem;left: 2.5rem">八年</span>
+                    <input type="radio" class="aui-radio" placeholder=""  style="top: 0.8rem;left: 0">
+                </div>
+                <div class="aui-col-xs-3">
+                    <input style="top: 0;left: 0;margin-left: -3.5rem;width:6rem " class="s3-gird-input" type="text" placeholder="手动输入">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+<div class="section-4 aui-content">
+    <div class="section-whole-one" style="padding-top: 1.5rem;height: 8%;" >商铺物业</div>
+    <div class="section-whole-one"></div>
+        <ol><li class="section-header" ><span></span>商铺地址</li></ol>
+    <section>
+        <div class="aui-grid">
+            <div class="aui-row s4 aui-margin-l-10">
+                <div class="aui-col-xs-4 aui-btn aui-btn-default" style="background-color: #2d76ff;"><span style="color: white">商业街类型</span></div>
+                <div class="aui-col-xs-4 aui-btn aui-btn-default aui-margin-l-15"><span>商场市场商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn aui-btn-default aui-margin-l-15"><span>临街类型商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default" style="margin-top: 1.4rem;"><span>商住两用商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default aui-margin-l-15" style="margin-top: 1.4rem;"><span>社区小区商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default aui-margin-l-15" style="margin-top: 1.4rem;"><span>写字楼底商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default  " style="margin-top: 1.3rem;"><span>地铁晨点商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default aui-margin-l-15" style="margin-top: 1.4rem;"><span>校区类型商铺</span></div>
+                <div class="aui-col-xs-4 aui-btn  aui-btn-default aui-margin-l-15" style="margin-top: 1.4rem;"><span>商业综合体</span></div>
+            </div>
+            <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 1rem;margin-left: 1rem">
+            </div>
+        </div>
+    </section>
+    <ol><li class="section-header" ><span></span>所在楼层</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row sec-2 s4-1 ">
+                <div class="aui-col-xs-2 aui-btn aui-btn-default aui-margin-l-0" style="background-color:#2d76ff; color: white"><span style="color: white">1层</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>2层</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>3层</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>整栋</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>手动加入</span></div>
+            </div>
+            <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 1rem;margin-left: 1rem">
+            </div>
+        </div>
+    </section>
+    <ol><li class="section-header" ><span></span>商铺层高</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row sec-2 s4-1">
+                <div class="aui-col-xs-2 aui-btn aui-btn-default aui-margin-l-0" style="background-color:#2d76ff;color: white"><span style="color: white">2.5米</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>3米</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>3.5米</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>4米</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>手动填入</span></div>
+            </div>
+            <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 1rem;margin-left: 1rem">
+            </div>
+        </div>
+    </section>
+    <ol><li class="section-header" ><span></span>时期建楼</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row sec-2 s4-1">
+                <div class="aui-col-xs-2 aui-btn aui-btn-default aui-margin-l-0" style="background-color:#2d76ff;"><span style="color: white">5年</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>10年</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>15年</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>20年</span></div>
+                <div class="aui-col-xs-2 aui-btn aui-btn-default" style="margin-left: 0.5rem"><span>手动填入</span></div>
+            </div>
+            <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 1rem;margin-left: 1rem">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row">
+                <div class="aui-col-xs-6 aui-grid">
+                    <div class="row ">
+                        <div class="sec-5">
+                            <div class="aui-col-xs-4 s4"><span>是否分割</span></div>
+                            <div class="aui-col-xs-4" style="margin-left: -1.3rem">
+                                <input type="radio" checked="checked" class="aui-radio" placeholder=""  style="">
+                                <span class="aui-pull-right" style="">是</span>
+                            </div>
+                            <div class="aui-col-xs-4" style="margin-left: 0.5rem;">
+                                <input type="radio" class="aui-radio" placeholder=""  style="">
+                                <span class="aui-pull-right" style="">否</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-col-xs-6 aui-grid" style="margin-left: 2rem" >
+                    <div class="row ">
+                        <div class="sec-5">
+                            <div class="aui-col-xs-4 s4"><span>是否明火</span></div>
+                            <div class="aui-col-xs-4" style="margin-left: -1.3rem">
+                                <input type="radio" class="aui-radio" placeholder=""  style="">
+                                <span class="aui-pull-right" style="">是</span>
+                            </div>
+                            <div class="aui-col-xs-4" style="margin-left: 0.5rem;">
+                                <input type="radio" class="aui-radio" placeholder=""  style="">
+                                <span class="aui-pull-right" style="">否</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="section-5 aui-content">
+    <div class="section-whole-one" style="padding-top: 1.5rem;height: 4%;" >商铺配套</div>
+    <ol><li class="section-header" ><span></span>商铺基本设施</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row zhu s5">
+                    <div class="aui-col-xs-2 aui-margin-t-0  aui-margin-l-0 " style="padding-top: 0">
+                        <div style="background-color:#1d77ff;" class="s5-icon aui-btn aui-btn-default"></div>
+                        <span >客梯</span>
+                    </div>
+                    <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                        <div class="s5-icon aui-btn aui-btn-default"></div>
+                        <span>货梯</span>
+                    </div>
+                    <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                        <div class="s5-icon aui-btn aui-btn-default"></div>
+                        <span>扶梯</span>
+                    </div>
+                    <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                        <div class="s5-icon aui-btn aui-btn-default"></div>
+                        <span>天然气</span>
+                    </div>
+                    <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                        <div class="s5-icon aui-btn aui-btn-default"></div>
+                        <span>外摆摊</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+            <div class="aui-row s5 zhu">
+                <div class="aui-col-xs-2 aui-margin-t-0 aui-margin-l-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>上水</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0" >
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>下水</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>排污</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>wifi</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>煤气管</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+        <div class="aui-row s5 zhu">
+            <div class="aui-col-xs-2 aui-margin-t-0 aui-margin-l-0 " style="padding-top: 0">
+                <div class="s5-icon aui-btn aui-btn-default"></div>
+                <span>烟道</span>
+            </div>
+            <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                <div class="s5-icon aui-btn aui-btn-default"></div>
+                <span>空调</span>
+            </div>
+            <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                <div class="s5-icon aui-btn aui-btn-default"></div>
+                <span>供暖</span>
+            </div>
+            <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                <div class="s5-icon aui-btn aui-btn-default"></div>
+                <span>停车位</span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+    </div>
+
+    <ol><li class="section-header" ><span></span>商品配套</li></ol>
+    <section style="">
+        <div class="aui-gird">
+            <div class="aui-row">
+                <div class="aui-col-sx-4 aui-btn aui-btn-default aui-margin-l-0" style="background-color:#1d77ff; width:10.5rem;height:3.3rem  ">
+                    <div class="s5-peitao" style="">
+                        <span></span><span style="color: white">毛胚商铺</span>
+                    </div>
+                </div>
+                <div class="aui-col-sx-4 aui-btn aui-btn-default aui-margin-l-10" style="width:10.5rem;height:3.3rem  ">
+                    <div class="s5-peitao">
+                        <span></span><span>简装商铺</span>
+                    </div>
+                </div>
+                <div class="aui-col-sx-4 aui-btn aui-btn-default aui-margin-l-10" style="width:10.5rem;height:3.3rem  ">
+                    <div class="s5-peitao">
+                        <span></span><span>精装商铺</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+    </div>
+
+    <ol><li class="section-header" ><span></span>商品邻居</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row">
+                <div class="aui-col-xs-2" style="height: 3.2rem;line-height: 3.2rem">
+                    <span>左店铺名字:</span>
+                </div>
+                <div class="aui-col-xs-10" style="height: 3.2rem;">
+                    <input type="text" placeholder="" style="background-color:#f1f1f1 ;height: 3.2rem;width: 25.05rem;border-radius: 1rem">
+                </div>
+            </div>
+            <div class="aui-row" style="margin-top: 1rem">
+                <div class="aui-col-xs-2" style="height: 3.2rem;line-height: 3.2rem">
+                    <span>当前店铺名字:</span>
+                </div>
+                <div class="aui-col-xs-10" style="height: 3.2rem;">
+                    <input type="text" placeholder="" style="background-color:#f1f1f1 ;height: 3.2rem;width: 25.05rem;border-radius: 1rem">
+                </div>
+            </div>
+            <div class="aui-row" style="margin-top: 1rem">
+                <div class="aui-col-xs-2" style="height: 3.2rem;line-height: 3.2rem">
+                    <span>右边店铺名字:</span>
+                </div>
+                <div class="aui-col-xs-10" style="height: 3.2rem;">
+                    <input type="text" placeholder="" style="background-color:#f1f1f1 ;height: 3.2rem;width: 25.05rem;border-radius: 1rem">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+    </div>
+
+    <ol><li class="section-header" ><span></span>最近运营</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0  aui-margin-l-0 " style="padding-top: 0">
+                    <div style="background-color:#1d77ff;" class="s5-icon aui-btn aui-btn-default"></div>
+                    <span >客梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>货梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>扶梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>天然气</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0  aui-margin-l-0 " style="padding-top: 0">
+                    <div style="background-color:#1d77ff;" class="s5-icon aui-btn aui-btn-default"></div>
+                    <span >客梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>货梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>扶梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>天然气</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0  aui-margin-l-0 " style="padding-top: 0">
+                    <div style="background-color:#1d77ff;" class="s5-icon aui-btn aui-btn-default"></div>
+                    <span >客梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>货梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>扶梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>天然气</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+    </div>
+
+    <ol><li class="section-header" ><span></span>建议下位租令者经营</li></ol>
+    <section>
+        <div class="aui-gird">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0  aui-margin-l-0 " style="padding-top: 0">
+                    <div style="background-color:#1d77ff;" class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>客梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>货梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>扶梯</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>天然气</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>外摆摊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0 aui-margin-l-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>上水</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0" >
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>下水</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>排污</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>wifi</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>煤气管</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>煤气管</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 1rem">
+        <div class="aui-grid">
+            <div class="aui-row s5">
+                <div class="aui-col-xs-2 aui-margin-t-0 aui-margin-l-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>烟道</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>空调</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>供暖</span>
+                </div>
+                <div class="aui-col-xs-2 aui-margin-t-0 " style="padding-top: 0">
+                    <div class="s5-icon aui-btn aui-btn-default"></div>
+                    <span>停车位</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="width: 91%;
+                height: 0.05rem;background-color:#eee;margin-top: 2rem;margin-left: 1rem">
+    </div>
+
+
+</div>
+<div class="section-6 aui-btn aui-btn-default">
+    认领店铺
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ea55_footer_heigth"></div>
+<footer class="aui-bar aui-bar-tab" id="footer">
+    <div class="aui-bar-tab-item aui-active" tapmode>
+    <i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 footer_i1"></i>
+    <div class="aui-bar-tab-label">首页</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+    <i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 footer_i2"></i>
+    <div class="aui-bar-tab-label">收藏</div>
+    </div>
+<div class="aui-bar-tab-item" tapmode>
+    <i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 footer_i3"></i>
+    <div class="aui-bar-tab-label">发布</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+       <i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 footer_i4"></i>
+        <div class="aui-bar-tab-label">发现</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <!--     <div class="aui-badge">99</div>-->
+      <i class="aui-iconfont aui-icon-home ea55_zidingyi_ico ea55_bg_img_box0 footer_i5"></i>
+        <div class="aui-bar-tab-label">我的</div>
+    </div>
+</footer>
+</body>
+
+
+
+<script src="http://bx.ea55.com/source/plugin/ea55_api2/template/aui/script/aui-slide.js?aKs" type="text/javascript" ></script>
+<script type="text/javascript">
+
+</script><script src="http://bx.ea55.com/source/plugin/ea55_api2/template/aui/script/api.js?aKs" type="text/javascript" ></script></html>
